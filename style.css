@@ -1,3 +1,4 @@
+
 *
 { margin:0;
   padding:0;
@@ -205,5 +206,148 @@
     border-radius: 4px;
     cursor: pointer;
   }
+  .footer{
+    background:rgb(71, 42, 42);
+    padding:1rem 7%;
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .box-container .box-footer{
+    flex:1 1 25rem;
+    margin:2rem;
+}
+
+.footer .box-container .box-footer h3{
+    font-size: 2.5rem;
+    color:#fff;
+    padding:1rem 0;
+    font-weight: normal;
+}
+
+.footer .box-container .box-footer p{
+    font-size: 1.7rem;
+    color:#eee;
+    padding:1rem 0;
+}
+
+.footer .box-container .box-footer a{
+    font-size: 1.7rem;
+    color:#eee;
+    padding:1rem 0;
+    display: block;
+}
+
+.footer .box-container .box a:hover{
+    color:var(--yellow);
+}
+
+.footer .box-container .box p i{
+    padding-right: .5rem;
+    color:var(--yellow);
+}
+
+.footer .credit{
+    font-size: 2rem;
+    text-align: center;
+    border-top: .2rem solid rgba(255,255,255,.7);
+    padding:2rem 1rem;
+    font-weight: normal;
+    letter-spacing: .1rem;
+    color:#fff;
+}
+
+.footer .credit a{
+    color:var(--yellow);
+}
+.pd {
+  padding: 70px;
+}
+
+.no-pd {
+  padding: 0;
+}
+
+.hero {
+  display: bock;
+  position: relative;
+  overflow: hidden;
+}
+
+.box-adopt {
+  display: block;
+  width: 900px;
+  min-height: 560px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px 70px;
+  color: #4d4d4d;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+/* Info */
+.width {
+  display: inline-block;
+  max-width: 55%;
+}
+
+.info {
+  display: inline-block;
+  margin-top: 80px;
+  z-index: 9;
+  animation:  moveInLeft 1s ease-out 0.2s;
+  animation-fill-mode: backwards;
+}
+
+.heading {
+  font-family: 'Cambo', serif;
+  font-size: 50px;
+  line-height: 55px;
+  letter-spacing: 1.2px;
+  margin-bottom: 35px;
   
-  
+}
+
+.heading-main,
+.heading-second {
+  display: block;
+}
+
+.heading-dsc {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  line-height: 22px;
+  margin-bottom: 45px;
+}
+
+
+
+/* Animale Image */
+.dog-img {
+  position: absolute;
+  right: 15px;
+  bottom: -150px;
+  z-index: 1;
+  animation:  moveInUp 1s ease-out .5s;
+  animation-fill-mode: backwards;
+}
+
+.info-img-dog {
+  width: 400px;
+}
+
+
+
+
+
+
+
+
+
