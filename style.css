@@ -1,14 +1,8 @@
-
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,100");
 *
 { margin:0;
   padding:0;
-}
-
-.image
-{  position: absolute;
-   width: 200px;
- left:0;
-
 }
 .header
 {
@@ -19,39 +13,85 @@
     min-height: 100vh;
     background-position: center;
 }
-.links {
-    background:white;
-    text-align:center;
-    position:relative;
-    top:0;
-    width:100%;
-    height:30%;
-    
+.menu{
+  background: #fafafa; 
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 16px;
+  box-shadow: 1px 1px 3px rgba(0,0,0, .5);
 }
-.links ul{
-    display:inline-flex;
-    list-style: none;
-    color:black;
-    padding-left: 50px;
-   
+.menu ul{
+  display:flex;
+  justify-content: center;
+  max-width: 900px;
+  margin: auto;
+  list-style-type: none;
 }
-.links ul li{
-    width:120px;
-    margin:15px;
-    
-    padding:20px;
+.menu li{
+  position: relative;
+  min-width: 240px; 
+  border-right:solid 1px rgba(0,0,0, .2);
 }
-.links a
-{
-    list-style: none;
-    text-decoration: none;
-    color:black;
+.menu li:first-child{
+  border-left:solid 1px rgba(0,0,0, .2);
 }
-.links li:hover
-{
-    background-color:#ff8400;
-    border-radius:30px;
+.menu a{ 
+  text-decoration: none; 
+  color: #000; 
+  display: flex;
+  padding: 20px 30px;
+  transition: .5s;   
+  text-transform: uppercase;
 }
+.menu a:hover{
+  background: rgba(0,0,0,.2); 
+  display:block; 
+  text-indent: 24px;
+  color: rgb(233, 112, 31);
+}
+.menu li:before{
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 20px;
+  transform: scale(0);
+  top: 50%;
+  margin-top: -12px;
+  transition: .2s;
+  font-family: FontAwesome;
+  font-size: 24px;
+  color: rgb(236, 135, 19);
+}
+.menu li:hover:before{
+  transform: scale(1);
+  transition: .3s .3s;
+}
+.menu li a:before,
+.menu li a:after{
+  border-radius: 0;
+  transition: 5s;
+}
+.menu li a:hover:before,
+.menu li a:hover:after{
+ content: "";
+ position: absolute;
+ z-index: -1;
+ box-shadow: 0 0 20px rgba(0,0,0,0.6);
+ top: 0;
+ bottom: 0;
+ left: 20px;
+ right: 20px;
+ border-radius: 100px / 10px;
+}
+.menu li#home:before{content: "\f1b0";}
+.menu li#about:before{content: "\f1b0";}
+.menu li#contact:before{content: "\f1b0";}
+.menu li#locations:before{content: "\f1b0";}
+
+.title h1:before{content: "\f1b0";
+font-family:FontAwesome;
+}
+
 .caption
 {   position:absolute;
     top:60%;
@@ -164,7 +204,7 @@
     text-decoration: none;
     color: #ffffff;
     text-transform: uppercase;
-    background-color:#fc7703 ;
+    background-color:orange ;
     padding: 10px 25px;
     border-radius: 25px;
     margin-top: 25px;
@@ -320,7 +360,7 @@
 }
 
 .heading-dsc {
-  font-size: 13px;
+  font-size: 25px;
   font-weight: 500;
   letter-spacing: 1.2px;
   line-height: 22px;

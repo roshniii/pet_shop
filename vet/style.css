@@ -1,0 +1,62 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    max-width: 1000px;
+    min-width: 345px;
+    margin: auto;
+    color: black;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Shippori Mincho B1";
+  }
+  
+  /* HEADER STYLES */
+  #header {
+    min-width: 300px;
+    background-color: orange;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .title-and-img {
+    padding-left: 2.5rem;
+    display: flex;
+  }
+  #header-img {
+    height: 100px;
+    width: auto;
+    margin-right: 1.5rem;
+    border-radius: 50%;
+  }
+  #main {
+    position: relative;
+    top: 3rem;
+    max-width: 90%;
+    margin: auto;
+  }
+  
+  
+  #services {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  #services h3 {
+    font-size: 1.6rem;
+  }
+  .bath,
+  .trim,
+  .nails {
+    display: flex;
+    margin-top: 3rem;
+  }
+  
+  
