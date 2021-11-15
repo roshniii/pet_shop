@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
   </head>
   <body>
- 
+
     <!--alert messages start-->
     <?php echo $alert; ?>
     <!--alert messages end-->
@@ -24,7 +24,7 @@
         <div><i class="fas fa-clock"></i>Mon - Fri 8:00 AM to 5:00 PM</div>
       </div>
       <div class="contact-form">
-        <h2>Slide into our dms</h2>
+        <h2>Contact Us</h2>
         <form class="contact" action="" method="post">
           <input type="text" name="name" class="text-box" placeholder="Your Name" required>
           <input type="email" name="email" class="text-box" placeholder="Your Email" required>

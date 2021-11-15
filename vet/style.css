@@ -58,5 +58,10 @@ body {
     display: flex;
     margin-top: 3rem;
   }
+  img.rounded-corners {
+    border-radius: 30px;
+    height: 400px;
+    width:500px;
+  }
   
   
